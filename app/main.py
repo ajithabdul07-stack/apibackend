@@ -7,7 +7,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(",")
+origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 
 app.add_middleware(
     CORSMiddleware,
