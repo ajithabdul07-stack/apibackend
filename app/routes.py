@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
-from sqlalchemy.orm import Session
-from .database import SessionLocal
-from .models import Contact
-from .schemas import ContactCreate
+# from sqlalchemy.orm import Session
+# from .database import SessionLocal
+# from .models import Contact
+# from .schemas import ContactCreate
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -47,12 +47,12 @@ def Send_mail(datas):
         print(e)
 
 
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+# def get_db():
+#     db = SessionLocal()
+#     try:
+#         yield db
+#     finally:
+#         db.close()
 
 @router.post("/contactform")
 def create_contact(contact: ContactCreate, db: Session = Depends(get_db)):
