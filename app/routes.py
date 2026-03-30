@@ -158,6 +158,6 @@ def get_chat():
 def get_chat():
     return {
         "status": "success",
-        "messages": chat_data
+        "messages": chat2
     }
 
