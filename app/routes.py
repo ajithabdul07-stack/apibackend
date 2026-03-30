@@ -65,3 +65,99 @@ def create_contact(contact: ContactCreate):
 @router.get("/")
 def Check():
     return {"message": "Code worked"}
+
+
+chat_data = [
+    {
+        "message": "Enga di poitaa",
+        "reply":"iruka da"
+        
+    },
+    {
+
+        "message": "Hmm",
+        "reply":"Ena panra"
+        
+    },
+    {
+
+        "message": "Checking my penis",
+        "reply":"why so?"
+        
+    },
+    {
+
+        "message": "Temp",
+        "reply":""
+        
+    },
+    {
+
+        "message": "Summa",
+        "reply":""
+        
+    },
+    {
+
+        "message": "Thottu parthean",
+        "reply":""
+        
+    },
+    {
+
+        "message": "Oozing aa nu paarthiya",
+        "reply":"aama"
+        
+    },
+   
+]
+
+
+chat2 = [
+     {
+
+        "message": "Gonna make u moan",
+        "reply":"common"
+        
+    },
+     {
+
+        "message": "ok",
+        "reply":"removing ur pants"
+        
+    },
+     {
+
+        "message": "ok",
+        "reply":"And ur garments"
+        
+    },
+     {
+
+        "message": "ok",
+        "reply":"Touched ur p"
+        
+    },
+     {
+
+        "message": "ok",
+        "reply":"Ur p is in my m"
+        
+    },
+]
+
+@app.get("the_drummerdoc/chat1")
+def get_chat():
+    return {
+        "status": "success",
+        "messages": chat_data
+    }
+
+
+@app.get("the_drummerdoc/chat2")
+def get_chat():
+    return {
+        "status": "success",
+        "messages": chat_data
+    }
+
