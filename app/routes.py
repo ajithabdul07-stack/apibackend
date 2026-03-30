@@ -146,7 +146,7 @@ chat2 = [
     },
 ]
 
-@app.get("the_drummerdoc/chat1")
+@router.get("the_drummerdoc/chat1")
 def get_chat():
     return {
         "status": "success",
@@ -154,7 +154,7 @@ def get_chat():
     }
 
 
-@app.get("the_drummerdoc/chat2")
+@router.get("the_drummerdoc/chat2")
 def get_chat():
     return {
         "status": "success",
